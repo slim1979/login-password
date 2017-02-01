@@ -1,0 +1,16 @@
+slim,111
+nata,222
+igor,888
+admin,secret
+vasya,666_000
+ss,qw
+4343,erere
+3545,rere
+tttt,334
+gjhgj,lk'k
+kkl,ooo
+oioi,kkk
+opopo,k;lk
+iii,ooo
+oooppp,000
+fdfd,2323
