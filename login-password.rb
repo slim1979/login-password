@@ -35,6 +35,7 @@ def login_
 				print "Access granted!!!","\r";sleep 0.5
 				print "                 ","\r";sleep 0.5
 			end
+			#сюда вместо exit надо добавить переход на ваш вид, страницу
 			exit	
 		end
 	end
