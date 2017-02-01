@@ -72,7 +72,11 @@ def registration
 			file.write "#{@new_login},#{@new_password}\n"
 			file.close	
 			file_to_hash
-			puts "Registration confirmed."
+			#трижды мигающий текст. для наглядности
+			3.times do
+				print "Registration confirmed...    ","\r";sleep 0.5
+				print "                             ","\r";sleep 0.5
+			end
 			
 			enter		
 		end		
@@ -86,33 +90,17 @@ puts "(L)ogin or (R)egistration?: "; answer = gets.downcase; answer.strip!
 
 	if answer == "l"
 		login_ 
-		elsif answer == "r"
-		@hh[clone]=('klon')
+	elsif answer == "r"		
 		registration 
-		else
-			#трижды мигающий текст. для наглядности
-			3.times do
-				print "Didnt understand you. Try again","\r";sleep 0.5
-				print "                               ","\r";sleep 0.5
-			end
-			return enter
+	else
+		#трижды мигающий текст. для наглядности
+		3.times do
+			print "Didnt understand you. Try again","\r";sleep 0.5
+			print "                               ","\r";sleep 0.5
+		end
+		return enter
 	end
 end
 
 file_to_hash
 enter 
-
-
-#сообщаем, что регистрация успешно закончена
-#			#трижды мигающий текст. для наглядности
-#			3.times do
-#				print "                                      ","\r";sleep 0.5
-#				print "Registration confirmed. Want to login?","\r";sleep 0.5
-#			end
-#			puts; puts "(Y)es, (N)o : "; answer = gets.downcase.strip!
-#			if answer =="n"
-#				exit
-#				elsif
-#					login_
-#			end				
-			
