@@ -32,8 +32,8 @@ def login_
 		if @hh[login] == password		
 			#трижды мигающий текст. для наглядности
 			3.times do
-				print "bingo!!!","\r";sleep 0.5
-				print "        ","\r";sleep 0.5
+				print "Access granted!!!","\r";sleep 0.5
+				print "                 ","\r";sleep 0.5
 			end
 			exit	
 		end
