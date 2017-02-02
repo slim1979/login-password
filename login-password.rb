@@ -10,8 +10,7 @@ def file_to_hash
 		line.strip!		
 		line=line.split(",")
 		line[0].to_sym			
-		@hh[line[0]]=line[1]
-		
+		@hh[line[0]]=line[1]		
 	end
 	@input.close
 end
